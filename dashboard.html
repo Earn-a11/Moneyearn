@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TaskEarn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- WhatsApp Contact Button (Bonus) -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">TaskEarn</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="summary" class="summary">
+                <h2>Your Summary</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3 id="tasks-completed">0</h3>
+                        <p>Tasks Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="total-earnings">₹0</h3>
+                        <p>Total Earnings</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="balance">₹0</h3>
+                        <p>Balance</p>
+                    </div>
+                </div>
+            </section>
+            <section id="tasks" class="tasks">
+                <h2>Available Tasks</h2>
+                <div class="task-list">
+                    <div class="task-card">
+                        <h3>Subscribe to YouTube Channel</h3>
+                        <p>Subscribe to our branded channel and earn rewards.</p>
+                        <p class="reward">Reward: ₹25</p>
+                        <button class="mark-complete" data-task="subscribe">Mark Complete</button>
+                    </div>
+                    <div class="task-card">
+                        <h3>Watch a YouTube Video</h3>
+                        <p>Watch the full video and confirm completion.</p>
+                        <p class="reward">Reward: ₹25</p>
+                        <button class="mark-complete" data-task="watch">Mark Complete</button>
+                    </div>
+                    <div class="task-card">
+                        <h3>Like a Video</h3>
+                        <p>Like our video and share it for extra points.</p>
+                        <p class="reward">Reward: ₹25</p>
+                        <button class="mark-complete" data-task="like">Mark Complete</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 TaskEarn. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
